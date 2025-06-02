@@ -15,7 +15,7 @@ body {
 .left {
     position:relative;
     min-width: 40%;
-    height: 100vh;
+    
 }
 
 .logo {
@@ -35,6 +35,7 @@ body {
 
 .logo-img {
     width: 20%;
+    min-width: 20%;
 }
 .background{
     width: 100%;
@@ -54,23 +55,19 @@ body {
 }
 
 form{
-    margin-top: 2rem;
     display: flex;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+    width: 700px;
+    gap: 5rem;
 }
-
-form div{ 
-
-}
-/* .form-left {
+.form-column{
     display: flex;
-    flex-direction: column;
-} */
-
-form label {
-    display: block;
+    flex-direction:column;
 }
+
+form input {
+    margin-bottom: 2rem;
+}
+
+
 
 
