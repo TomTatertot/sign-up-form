@@ -77,7 +77,14 @@ input {
     margin-bottom: 1rem;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 3px;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+
+}
+
+input[type="password"]{
+    margin-bottom:0;
 }
 
 label {
@@ -95,7 +102,7 @@ input:focus {
 
 input[type="password"]:focus {
     outline: none;
-    border: 1px solid red;
+    border: 2px solid red;
     box-shadow: none; /* Remove default red shadow on Firefox */
     border-radius: 5px;
 }
