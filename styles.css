@@ -45,17 +45,26 @@ body {
 .right{
     line-height: 1.2;
     margin-top: 10vh;    
+}
+
+.header{
     padding: 3rem;
 }
 
 .right .block {
     margin-top: 2rem;
-    margin-bottom: 6rem;
     display: block;
 }
 
+.input-section {
+    padding: 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.219);
+}
+
+
 form{
     display: flex;
+    margin-top: 1rem;
     width: 700px;
     gap: 5rem;
 }
@@ -64,9 +73,69 @@ form{
     flex-direction:column;
 }
 
-form input {
-    margin-bottom: 2rem;
+input {
+    margin-bottom: 1rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 3px;
+    font-size: 1.25rem;
 }
+
+label {
+    font-family: Helvetica;
+    font-size: .9rem;
+}
+
+
+input:focus {
+    outline: none;
+    border: 2px solid rgba(0, 0, 236, 0.658);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: none; /* Remove default red shadow on Firefox */
+    border-radius: 5px;
+}
+
+.submit-section {
+    margin: 2rem 2rem;
+}
+.submit-button {
+    outline: none;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+
+    background-color: #596D48;
+}
+
+.submit-button:hover {
+    background-color: #506340;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Click (active): subtle press-down */
+.submit-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+a[href = "/login"]{
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
 
 
 
