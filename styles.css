@@ -64,13 +64,16 @@ body {
 
 form{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 1rem;
-    width: 700px;
+    /* max-width: 800px; */
     gap: 5rem;
 }
-.form-column{
+
+form div{
     display: flex;
-    flex-direction:column;
+    flex-direction:column; 
+    width: 20rem;
 }
 
 input {
@@ -140,6 +143,8 @@ a[href = "/login"]{
     font-weight: bold;
     text-decoration: none;
 }
+
+
 
 
 

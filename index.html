@@ -28,41 +28,51 @@
     <div class="input-section">
         <h1>Let's do this!</h1>
         <form id="userForm" action="">
-            <div class="form-column">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="firstName" id="first-name" placeholder="John" required>
+                <div>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="firstName" id="first-name" placeholder="John" required>
+                </div>
 
-                <label for="mail">EMAIL</label>
-                <input type="email" name="userEmail" id="mail" placeholder="johndoe@example.com" required>
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="lastName" id="last-name" placeholder="Doe" required>
+                </div>
 
-                <label for="pwd">PASSWORD</label>
-                <input type="password" 
-                name="password" 
-                id="pwd"
-                pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$"
-                title="Password must be at least 8 characters, include a number, an uppercase letter, and a special character."
-                aria-describedly ="pwd-help" 
-                required><!-- aria-describedly allows screen readers to read out the pwd-help text -->
-                <small id="pwd-help" class="helper-text">
-                    Must be at least 8 characters and include a number, uppercase letter, and special character.
-                  </small>
-            </div>
-            <div class="form-column">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="lastName" id="last-name" placeholder="Doe" required>
 
-                <label for="tel">PHONE NUMBER</label>
-                <input type="tel" name="userNumber" id="tel" placeholder="1234567890">
+                <div>
+                    <label for="mail">EMAIL</label>
+                    <input type="email" name="userEmail" id="mail" placeholder="johndoe@example.com" required>
+                </div>
 
-                <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                <input 
-                type="password" 
-                name="confirmPassword" 
-                id="confirm-pwd" 
-                pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$"
-                title="Password must be at least 8 characters, include a number, an uppercase letter, and a special character." 
-                required>
-            </div>
+                <div>
+                    <label for="tel">PHONE NUMBER</label>
+                    <input type="tel" name="userNumber" id="tel" placeholder="1234567890">
+                </div>
+
+                <div>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password"
+                    name="password"
+                    id="pwd"
+                    pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$"
+                    title="Password must be at least 8 characters, include a number, an uppercase letter, and a special character."
+                    aria-describedly ="pwd-help"
+                    required><!-- aria-describedly allows screen readers to read out the pwd-help text -->
+                    <small id="pwd-help" class="helper-text">
+                        Must be at least 8 characters and include a number, uppercase letter, and special character.
+                      </small>
+                </div>
+
+                <div>
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input
+                    type="password"
+                    name="confirmPassword"
+                    id="confirm-pwd"
+                    pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$"
+                    title="Password must be at least 8 characters, include a number, an uppercase letter, and a special character."
+                    required>
+                </div>
         </form>
     </div>
     
