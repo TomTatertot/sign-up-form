@@ -11,34 +11,43 @@
 
 <body>
     <div class="left">
-        <img class="background" src="images/background.jpg" alt="Dinosaur" />
-    </div>
+        <div class ="logo">
+            <img class="logo-img" src="images/odin-lined.png" alt="Odin Logo"> 
+            <h1>ODIN</h1>
+        </div>
+        <img class="background" src="images/background.jpg" alt="Background image" />
+    </div> 
 
     <div class="right">
         <h1>This is not a real online service! You know you need something like this in your life to help you realize your
-            deepest dreams. Sign up <em>now</em> to get started.</h1>
-        <h1>You <em>know</em> you want to </h1>
+            deepest dreams. <br>Sign up <em>now</em> to get started.
+        <span class="block">You <em>know</em> you want to </span>
+        </h1>
 
+        <h1>Let's do this!</h1>
         <form action="">
-            <h1>Let's do this!</h1>
 
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="firstName" id="first-name">
+                <div class="form-left">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="firstName" id="first-name">
 
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="lastName" id="last-name">
+                <label for="mail">EMAIL</label>
+                <input type="email" name="userEmail" id="mail">
 
-            <label for="mail">EMAIL</label>
-            <input type="email" name="userEmail" id="mail">
+                <label for="pwd">PASSWORD</label>
+                <input type="password" name="password" id="pwd">
+            </div>
+            <div class ="form-right">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="lastName" id="last-name">
 
-            <label for="tel">PHONE NUMBER</label>
-            <input type="tel" name="userNumber" id="tel">
+                <label for="tel">PHONE NUMBER</label>
+                <input type="tel" name="userNumber" id="tel">
 
-            <label for="pwd">PASSWORD</label>
-            <input type="password" name="password" id="pwd">
-
-            <label for="confirm-pwd">CONFIRM PASSWORD</label>
-            <input type="password" name="confirmPassword" id="confirm-pwd">
+                <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                <input type="password" name="confirmPassword" id="confirm-pwd">
+            </div>
+            
 
         </form>
 
