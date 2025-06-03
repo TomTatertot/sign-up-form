@@ -29,28 +29,31 @@
         <h1>Let's do this!</h1>
         <form id="userForm" action="">
                 <div>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="firstName" id="first-name" placeholder="John" required>
+                    <label for="first-name">FIRST NAME<span class="required-asterisk">*</span></label>
+                    <input type="text" name="firstName" id="first-name" autocomplete="given-name" placeholder="John" required>
                 </div>
 
                 <div>
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="lastName" id="last-name" placeholder="Doe" required>
+                    <label for="last-name">LAST NAME<span class="required-asterisk">*</span></label>
+                    <input type="text" name="lastName" id="last-name" autocomplete="family-name" placeholder="Doe" required>
                 </div>
 
 
                 <div>
-                    <label for="mail">EMAIL</label>
-                    <input type="email" name="userEmail" id="mail" placeholder="johndoe@example.com" required>
+                    <label for="mail">EMAIL<span class="required-asterisk">*</span></label>
+                    <input type="email" name="userEmail" id="mail" autocomplete="email" placeholder="johndoe@example.com" required>
                 </div>
 
                 <div>
                     <label for="tel">PHONE NUMBER</label>
-                    <input type="tel" name="userNumber" id="tel" placeholder="1234567890">
+                    <input type="tel" name="userNumber" id="tel" 
+                    pattern="^\d{3}[- ]?\d{3}[- ]?\d{4}$"
+                    autocomplete="tel"
+                    placeholder="1234567890">
                 </div>
 
                 <div>
-                    <label for="pwd">PASSWORD</label>
+                    <label for="pwd">PASSWORD<span class="required-asterisk">*</span></label>
                     <input type="password"
                     name="password"
                     id="pwd"
@@ -64,7 +67,7 @@
                 </div>
 
                 <div>
-                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <label for="confirm-pwd">CONFIRM PASSWORD<span class="required-asterisk">*</span></label>
                     <input
                     type="password"
                     name="confirmPassword"
@@ -74,6 +77,7 @@
                     required>
                 </div>
         </form>
+        <small class="asterisk-legend">Fields marked with <span class="required-asterisk">*</span> are required.</small>
     </div>
     
     <div class="submit-section">
